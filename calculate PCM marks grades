@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int marks,p,c,m;
+clrscr();
+printf("");
+printf("enter marks of physics:\n");
+scanf("%d",&p);
+printf("enter marks of maths:\n");
+scanf("%d",&m);
+printf("enter marks of chem:\n");
+scanf("%d",&c);
+marks=(p+c+m)/3;
+printf("%d\n",marks);
+if(marks <100&&marks >85)
+{
+printf("A grade student\n");
+}
+else if ( 55<marks &&   marks<84)
+{
+printf(" B grade student\n ");
+}
+else if( 34  < marks  && marks< 54  )
+{
+printf(" C grade student\n ");
+}
+else
+{
+printf("fail");
+}
+getch();
+}
